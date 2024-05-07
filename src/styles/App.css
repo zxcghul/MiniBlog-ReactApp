@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#root {
+    display: flex;
+    justify-content: center;
+}
+
+.App {
+    width: 800px;
+}
+
+.post {
+    display: flex;
+    padding: 15px;
+    border: 2px solid green;
+    margin-top: 15px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+  
+  .post-enter {
+    opacity: 0;
+  }
+  .post-enter-active {
+    opacity: 1;
+    transition: all 200ms ease-in;
+  }
+  .post-exit {
+    opacity: 1;
+  }
+  .post-exit-active {
+    opacity: 0;
+    transform: translateX(-200px);
+    transition: all 350ms ease-in;
+  }
+  
+  .page__wrp {
+    display: flex;
+    margin-top: 30px;
+  }
+  .page {
+    margin-right: 5px;
+    padding: 10px;
+    border: 1px solid green;
+    cursor: pointer;
+  }
+
+  .page__current {
+    border: 3px solid teal;
+    font-weight: bold;
+  }
